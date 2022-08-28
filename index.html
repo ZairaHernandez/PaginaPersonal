@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <header>
+            <a href="#"> <img src="img/logouv.png" class="logo"></a>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href="cv.html">Cv</a></li>
+                <li><a href="#">Trabajos</a></li>
+                <li><a href="#">Proyectos</a></li>
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2> Aprendiendo cosas nuevas<br> Para <span>Mejorar</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mattis vitae platea natoque malesuada, feugiat netus hac
+                ullamcorper fusce accumsan nam mollis ridiculus euismod.</p>
+                <a href="#">Aprende más</a>
+                </div>
+                <div class="imgBox">
+                    <img src="img/html.png" class="fotohmtl">
+                </div> 
+        </div>
+        <ul class="thumb">
+            <li><img src="img/phtml.png" class="phtml" onclick="imgSlider('img/html.png');changeCircleColor('#017143')"></li>
+            <li><img src="img/pcss.png" class="pcss" onclick="imgSlider('img/css.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="img/pjavascript.png" class="pjavascript" onclick="imgSlider('img/javascript.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class = "sci">
+            <li><a href="#"><img src="img/facebook.png" ></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+
+        </ul>
+    </section>
+
+    <script type = "text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.fotohmtl').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle'); 
+            circle.style.background = color;
+            
+        }
+    </script>
+    </body>
+    </html>

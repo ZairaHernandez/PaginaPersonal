@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.hed{
+    background: white;
+}
+.hed li {
+    float: left;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.hed li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.hed li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.hed li a.active {
+    color: white;
+    background-color: #04AA6D;
+}
+
+
+body {
+    
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    min-height: 100vh;
+  
+}
+
+/*Configuraciones del cv en la parte izquierda*/
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    box-shadow: 0 50px 50px 50px  rgba(0, 0, 0, 0.1);
+}
+
+.container .izquierda {
+    position: relative;
+    background: rgba(4, 52, 70);
+    padding: 40px;
+
+}
+
+.textoPerfil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(177, 218, 229);
+}
+
+.textoPerfil .imgBx {
+
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.textoPerfil .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textoPerfil h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.textoPerfil h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+
+}
+
+
+.perfilPersonal {
+    padding-top: 40px;
+
+}
+
+.perfilPersonal p {
+    color: rgb(202, 239, 250);
+
+}
+
+.infoContacto {
+    padding-top: 40px;
+}
+
+
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+
+.infoContacto ul {
+    position: relative;
+}
+
+.infoContacto ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+
+.infoContacto ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgba(42, 170, 222);
+
+}
+
+.infoContacto ul li span {
+    color: rgb(202, 239, 250);
+    font-weight: 300;
+
+}
+
+.infoEducacion li {
+
+    margin-bottom: 15px;
+    list-style: none;
+
+}
+
+.infoEducacion h5 {
+
+    font-weight: 500;
+    color: rgba(20, 105, 153);
+    font-weight: bolder;
+}
+
+.infoEducacion h4:nth-child(2) {
+
+    font-weight: 500;
+    color: rgb(202, 239, 250);
+    font-weight: bold;
+}
+
+.infoEducacion h4 {
+
+    font-weight: 300;
+    font-weight: lighter;
+    color: rgba(177, 218, 229);
+}
+
+.infoIdiomas {
+
+    padding-top: 30px;
+}
+
+
+.infoIdiomas ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+
+
+.infoIdiomas span {
+
+    font-weight: 300;
+    font-weight: lighter;
+    color: rgba(177, 218, 229);
+}
+
+.infoIdiomas .percent {
+
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: green;
+    display: block;
+    margin-top: 5px;
+}
+
+.infoIdiomas .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: greenyellow;
+}
+
+.container .derecha {
+    position: relative;
+    background: white;
+    padding: 40px;
+
+}
+
+.title2 {
+    color: rgba(4, 52, 70);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin: 20px 0;
+}
+
+.habilidades ul li {
+    position: relative;
+    list-style: none;
+    margin: 5px 0;
+    cursor: pointer;
+
+}
+
+
+.habilidades ul li span {
+    color: black;
+    font-weight: 300;
+    width: 100%;
+
+}
+
+.conocimiento ul li {
+    position: relative;
+    list-style: none;
+    margin: 5px 0;
+    cursor: pointer;
+
+}
+
+
+.conocimiento ul li span {
+    color: black;
+    font-weight: 300;
+    width: 100%;
+}
+
+.logros .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.logros .box .fecha {
+    min-width: 150px;
+
+}
+
+.logros .box .fecha h5 {
+    text-transform: uppercase;
+    color: #858c90;
+    font-weight: 600;
+
+}
+
+.logros .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(20.7% at 89% 8%);
+}
+
+
+.circle3 {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    background: orangered;
+    clip-path: circle(12.9% at 4% 55%);
+}
+
+.circle4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(59, 59, 197);
+    clip-path: circle(7.0% at 92% 75%);
+}
